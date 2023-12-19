@@ -27,6 +27,26 @@ describe("Application", () => {
         });
         expect(inputElement2).toBeInTheDocument();
 
+        const paragraphElement = screen.getByText("All fields are mendatory", {
+            selector: "p"
+        });
+        expect(paragraphElement).toBeInTheDocument();
+
+        const inputElement3 = screen.getByPlaceholderText("FullName");
+        expect(inputElement3).toBeInTheDocument();
+
+        const inputElement4 = screen.getByDisplayValue("Mitesh");
+        expect(inputElement4).toBeInTheDocument();
+
+        const imageElement = screen.getByAltText("A person with a laptop");
+        expect(imageElement).toBeInTheDocument();
+
+        const closeElement = screen.getByTitle("close");
+        expect(closeElement).toBeInTheDocument();
+
+        const customElement = screen.getByTestId('custom-testId');
+        expect(customElement).toBeInTheDocument();
+
         const bioElement = screen.getByRole("textbox", {
             name: 'Bio'
         });

@@ -4,7 +4,7 @@ const Application = () => {
             <h1>Job Application Form</h1>
             <h2>Section 1</h2>
             <p>All fields are mendatory</p>
-            <img src="" alt="A person with a laptop" />
+            <img src="https://images.rawpixel.com/image_600/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1LzM4My1qaXI5NjExLWt1dC0xLmpwZw.jpg" alt="A person with a laptop" />
             <span title="close">X</span>
             <div data-testid="custom-testId">Custom Element</div>
             <form>
